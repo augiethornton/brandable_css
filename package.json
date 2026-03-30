@@ -1,6 +1,6 @@
 {
   "name": "@instructure/brandable_css",
-  "version": "3.0.1",
+  "version": "3.1.0",
   "description": "This is what we use to compile sass in canvas-lms with all our variants and custom theme editor css",
   "main": "./src/main.js",
   "scripts": {
@@ -31,7 +31,7 @@
     "postcss": "^6",
     "postcss-url": "^7",
     "rev-hash": "^2",
-    "sass": "^1.35.1"
+    "sass": "^1.98.0"
   },
   "devDependencies": {
     "chai": "^4",
