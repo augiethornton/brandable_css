@@ -60,7 +60,8 @@ module.exports = async function compileBundle ({bundleName, variant}) {
     includePaths: includePaths,
     outputStyle: SASS_STYLE === 'nested' ? 'expanded' : SASS_STYLE,
     sourceComments: SASS_STYLE !== 'compressed',
-    sourceMap: false
+    sourceMap: false,
+    silenceDeprecations: ['import', 'global-builtin', 'color-functions', 'legacy-js-api', 'if-function']
   })
 
   const postcssResult = await postcss([
